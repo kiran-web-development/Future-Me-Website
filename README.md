@@ -36,6 +36,16 @@ Wait for the terminal message to output and point your web browser directly to `
 
 ---
 
+<img width="1908" height="897" alt="future-hero" src="https://github.com/user-attachments/assets/d22b7c35-03af-4597-8b50-74606bd4d45c" />
+
+<img width="1794" height="1087" alt="future me-generate" src="https://github.com/user-attachments/assets/4046afbb-b8c6-4ac3-85f8-11661205f523" />
+
+<img width="1794" height="889" alt="Screenshot_31-5-2026_204748_future-me-website vercel app" src="https://github.com/user-attachments/assets/2311eaac-d8e6-41f2-9f70-22469d30eced" />
+
+<img width="1794" height="1141" alt="Screenshot_31-5-2026_20506_future-me-website vercel app" src="https://github.com/user-attachments/assets/9902f908-e47f-4e7b-b2a9-8554d681c381" />
+
+
+
 ## API Routes Documentation
 
 The full-stack architecture encapsulates the Google Gen AI SDK securely server-side so keys are never leaked to browser agents. 
