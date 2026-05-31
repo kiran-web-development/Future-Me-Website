@@ -1,0 +1,6 @@
+{
+  "name": "FutureMe",
+  "description": "An AI-powered personal reflection product that lets you communicate with your future successful self in a premium, Apple-inspired glassmorphic interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
