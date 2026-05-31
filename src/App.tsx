@@ -35,6 +35,22 @@ export default function App() {
         body: JSON.stringify(data),
       });
 
+      if (!response.ok) {
+        const text = await response.text();
+        let errorMessage = `Server error (${response.status})`;
+        try {
+          const parsed = JSON.parse(text);
+          if (parsed && parsed.error) errorMessage = parsed.error;
+        } catch {
+          if (text.includes("GEMINI_API_KEY")) {
+            errorMessage = "GEMINI_API_KEY is missing in Vercel settings. Please configure it under Environment Variables.";
+          } else {
+            errorMessage = `Vercel server returned error code ${response.status}. Please check your environment configuration.`;
+          }
+        }
+        throw new Error(errorMessage);
+      }
+
       const json = await response.json();
 
       if (json.success && json.data) {
@@ -45,7 +61,7 @@ export default function App() {
       }
     } catch (err: any) {
       console.error("Failed to generate FutureMe profile:", err);
-      setErrorHeader("FutureMe could not respond right now. Try again.");
+      setErrorHeader(err.message || "FutureMe could not respond right now. Try again.");
       setScreen("FORM");
     }
   };

@@ -71,6 +71,22 @@ export default function FutureMeChat({ coordinates }: FutureMeChatProps) {
         }),
       });
 
+      if (!response.ok) {
+        const text = await response.text();
+        let errorMessage = `Server error (${response.status})`;
+        try {
+          const parsed = JSON.parse(text);
+          if (parsed && parsed.error) errorMessage = parsed.error;
+        } catch {
+          if (text.includes("GEMINI_API_KEY")) {
+            errorMessage = "GEMINI_API_KEY is missing in Vercel settings.";
+          } else {
+            errorMessage = `Vercel server returned error code ${response.status}.`;
+          }
+        }
+        throw new Error(errorMessage);
+      }
+
       const result = await response.json();
 
       if (result.success) {
@@ -87,7 +103,7 @@ export default function FutureMeChat({ coordinates }: FutureMeChatProps) {
       }
     } catch (err: any) {
       console.error("Chat error:", err);
-      setErrorText("FutureMe could not respond right now. Try again.");
+      setErrorText(err.message || "FutureMe could not respond right now. Try again.");
     } finally {
       setIsTyping(false);
     }
