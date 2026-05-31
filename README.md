@@ -1,11 +1,11 @@
 # FutureMe 🧪
 
-**FutureMe** is an AI-powered personal reflection web application that establishes an immersive dialogue between the user and their successful future self. Designed with an elegant, premium, Apple-inspired dark aesthetic featuring deep blacks, crisp typography, and subtle glassmorphic panels, it completely rejects distracting linear/radial color gradients in favor of an elite, focused workspace.
+**FutureMe** is an AI-powered personal reflection web application that establishes an immersive dialogue between the user and their successful future self. Designed with an elegant, premium, Apple-inspired interface, it leverages cutting-edge AI to provide actionable insights and personalized guidance.
 
 ## Core Features
 
 1. **Entrance Portal**: Elegantly designed display of the coordinates launchpad.
-2. **Space Calibration Input**: Gathers Name, Current Age, Primary Goal/Mission, Daily Struggle/Friction Point, and One-Year Vision along with custom voice resonance channels (Motivational, Brutally Honest, Calm Mentor, CEO Mode).
+2. **Space Calibration Input**: Gathers Name, Current Age, Primary Goal/Mission, Daily Struggle/Friction Point, and One-Year Vision along with custom voice resonance channels (Motivational, Brutally Honest, Zen, etc.).
 3. **Synchronous Forging Sequence**: A cinematic multi-step transition showing precise calibration parameters as they compile.
 4. **The Quantum Console**: Displays custom Identity signposts, actionable immediate strategic maneuvers, warning beacons, personalized daily mantras, and keystone habits.
 5. **Contextual Chrono-Chat**: Full interactive follow-up capability preserving original coordinates, selected tone constraints, and history to deep dive into action plans.
@@ -36,15 +36,21 @@ Wait for the terminal message to output and point your web browser directly to `
 
 ---
 
-<img width="1908" height="897" alt="future-hero" src="https://github.com/user-attachments/assets/d22b7c35-03af-4597-8b50-74606bd4d45c" />
+## Screenshots & Demo
 
-<img width="1794" height="1087" alt="future me-generate" src="https://github.com/user-attachments/assets/4046afbb-b8c6-4ac3-85f8-11661205f523" />
+### 1. Landing Page - Entrance Portal
+<img width="1908" height="897" alt="FutureMe Landing Page - Hero Section with elegant introduction" src="https://github.com/user-attachments/assets/d22b7c35-03af-4597-8b50-74606bd4d45c" />
 
-<img width="1794" height="889" alt="Screenshot_31-5-2026_204748_future-me-website vercel app" src="https://github.com/user-attachments/assets/2311eaac-d8e6-41f2-9f70-22469d30eced" />
+### 2. Space Calibration Input Form
+<img width="1794" height="1087" alt="FutureMe Profile Generation Form - Input your personal details and vision" src="https://github.com/user-attachments/assets/4046afbb-b8c6-4ac3-85f8-11661205f523" />
 
-<img width="1794" height="1141" alt="Screenshot_31-5-2026_20506_future-me-website vercel app" src="https://github.com/user-attachments/assets/9902f908-e47f-4e7b-b2a9-8554d681c381" />
+### 3. The Quantum Console
+<img width="1794" height="889" alt="FutureMe Quantum Console - Personalized action plans and mantras from your future self" src="https://github.com/user-attachments/assets/2311eaac-d8e6-41f2-9f70-22469d30eced" />
 
+### 4. Contextual Chrono-Chat
+<img width="1794" height="1141" alt="FutureMe Chat Interface - Deep dialogue with your future self to refine your path" src="https://github.com/user-attachments/assets/9902f908-e47f-4e7b-b2a9-8554d681c381" />
 
+---
 
 ## API Routes Documentation
 
